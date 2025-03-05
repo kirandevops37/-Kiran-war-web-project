@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -36,6 +37,18 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.1.2184</version>
+      </plugin>
     </plugins>
   </build>
+
+  <properties>
+    <sonar.host.url>http://3.90.0.150:9000</sonar.host.url>
+    <sonar.login>squ_b7cb62ad069eeaa2449d385cb7b5779f41121d1d</sonar.login>
+    <sonar.projectKey>wwp</sonar.projectKey>
+  </properties>
 </project>

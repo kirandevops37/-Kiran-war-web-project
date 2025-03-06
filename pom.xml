@@ -46,9 +46,9 @@
     </plugins>
   </build>
 
-   <properties>
-    <sonar.host.url>http://3.90.0.150:9000</sonar.host.url>
-    <sonar.login>squ_b7cb62ad069eeaa2449d385cb7b5779f41121d1d</sonar.login>
+  <properties>
+    <sonar.host.url>http://3.80.99.155:9000</sonar.host.url>
+    <sonar.login>squ_f934ed401fb1e7e81dfa164e8614d974c0b64036</sonar.login>
     <sonar.projectKey>wwp</sonar.projectKey>
     <sonar.java.binaries>${project.build.directory}/classes</sonar.java.binaries>
   </properties>

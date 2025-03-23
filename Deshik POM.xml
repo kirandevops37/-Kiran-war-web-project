@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>onlinebookstore</groupId>
+  <artifactId>onlinebookstore</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <properties>
+    <sonar.host.url>http://3.90.0.150:9000</sonar.host.url>
+    <sonar.projectKey>onlinebookstore</sonar.projectKey>
+    <sonar.projectName>Online Bookstore</sonar.projectName>
+    <sonar.login>squ_b7cb62ad069eeaa2449d385cb7b5779f41121d1d</sonar.login>
+  </properties>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.1</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.9.0.2155</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.3.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.16</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>kiranrepo-releases</id>
+      <url>http://3.94.64.111:8081/repository/kiranrepo-release/</url>
+      <credentials>
+        <username>admin</username>
+        <password>Kiran@123</password>
+      </credentials>
+    </repository>
+    <snapshotRepository>
+      <id>kiranrepo-snapshots</id>
+      <url>http://3.94.64.111:8081/repository/kiranrepo-snapshot/</url>
+      <credentials>
+        <username>admin</username>
+        <password>Kiran@123</password>
+      </credentials>
+    </snapshotRepository>
+  </distributionManagement>
+
+</project>
